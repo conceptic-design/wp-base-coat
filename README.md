@@ -1,12 +1,13 @@
 # ConcepticDesign Base Coat
 
-A simple, boilerplate plugin to prepare new installs of Wordpress with my preferred settings. I also use it as a framework to develop plugins and add WP customizations.
+A simple, boilerplate plugin to prepare new installs of Wordpress with my preferred settings. I also use it as a framework to develop plugins and add WP customizations to projects.
 
 ## Features
 
-* Removes avatars, month/year folders and xmlrpc
-* Disables comments across the website
+* Removes month/year media folders, generator tags and xmlrpc
+* Disables comments, avatars and emojis across the website to save overhead
 * Hooks in place both back/frontend functionality and adding custom CSS/JS
+* Set the default editor view to HTML
 
 ## Installation
 

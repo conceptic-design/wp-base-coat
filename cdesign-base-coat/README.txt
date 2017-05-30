@@ -13,9 +13,10 @@ A simple, boilerplate plugin to prepare new installs of Wordpress with my prefer
 
 This plugin is used to adjust common settings and setup practices on a new WP installation. Options changed do not revert automatically so use with caution.
 
-1. Disable avatars and comments site-wide
-1. Disable xmlrpc for security purposes
-1. Set media to store in single directory and NOT use Year/Month folders
+1. Removes month/year media folders, generator tags and xmlrpc
+1. Disables comments, avatars and emojis across the website to save overhead
+1. Hooks in place both back/frontend functionality and adding custom CSS/JS
+1. Set the default editor view to HTML
 
 == Installation ==
 

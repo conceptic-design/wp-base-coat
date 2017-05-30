@@ -3,14 +3,13 @@
 /**
  *
  * @link              http://concepticdesign.com
- * @since             1.0.1
  * @package       Cdesign_Base_Coat
  *
  * @wordpress-plugin
  * Plugin Name:     Base Coat
  * Plugin URI:        http://concepticdesign.com
  * Description:       A base plugin to prepare new installs of WP with preferred settings and framework
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Conceptic Design
  * Author URI:        http://concepticdesign.com
  * License:           GPL-2.0+

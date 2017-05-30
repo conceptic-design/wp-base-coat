@@ -4,21 +4,18 @@
  *
  * @package    Cdesign_Base_Coat
  * @subpackage Cdesign_Base_Coat/includes
- * @since      1.0.1
  * @link       http://concepticdesign.com
  * @author     Kyle Reid <info@concepticdesign.com>
  */
 class Cdesign_Base_Coat {
 
 	/**
-	 * @since    1.0.0
 	 * @access   protected
 	 * @var      Cdesign_Base_Coat_Loader    $loader
 	 */
 	protected $loader;
 
 	/**
-	 * @since    1.0.0
 	 * @access   protected
 	 * @var      string    $plugin_name
 	 */
@@ -26,7 +23,6 @@ class Cdesign_Base_Coat {
 
 	/**
 	 *
-	 * @since    1.0.0
 	 * @access   protected
 	 * @var      string    $version
 	 */
@@ -82,6 +78,10 @@ class Cdesign_Base_Coat {
 	private function define_public_hooks() {
 
 		$plugin_public = new Cdesign_Base_Coat_Public( $this->get_plugin_name(), $this->get_version() );
+		
+		$this->loader->add_action('the_generator', $plugin_public, 'remove_gen_tag');
+		$this->loader->add_action('wp_default_editor', $plugin_public, 'set_default_editor');
+		$this->loader->add_action('init', $plugin_public, 'disable_emojis');
 
 	}
 

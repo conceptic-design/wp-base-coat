@@ -3,7 +3,6 @@
 /**
  * @package    Cdesign_Base_Coat
  * @subpackage Cdesign_Base_Coat/includes
- * @since      1.0.1
  * @link       http://concepticdesign.com
  * @author     Kyle Reid <info@concepticdesign.com>
  */
@@ -11,7 +10,6 @@ class Cdesign_Base_Coat_Activator {
 
 	/**
 	 * Init the activation functions
-	 * @since    1.0.1
 	 */
 	public static function activate() {
 				//modify base options/settings
