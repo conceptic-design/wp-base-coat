@@ -32,7 +32,7 @@ class Cdesign_Base_Coat {
 	public function __construct() {
 
 		$this->plugin_name = 'cdesign-base-coat';
-		$this->version = '1.0.1';
+		$this->version = '1.0.2';
 
 		$this->load_dependencies();
 		$this->define_admin_hooks();
@@ -68,11 +68,11 @@ class Cdesign_Base_Coat {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action('admin_menu', $plugin_admin, 'wpbc_reg_opts_page');
 
 	}
 
 	/**
-	 * Public hooks
 	 * @access   private
 	 */
 	private function define_public_hooks() {
@@ -102,7 +102,6 @@ class Cdesign_Base_Coat {
 	public function get_loader() {
 		return $this->loader;
 	}
-
 	
 	public function get_version() {
 		return $this->version;

@@ -4,21 +4,18 @@
  *
  * @package    Cdesign_Base_Coat
  * @subpackage Cdesign_Base_Coat/includes
- * @since      1.0.1
  * @link       http://concepticdesign.com
  * @author     Kyle Reid <info@concepticdesign.com>
  */
 class Cdesign_Base_Coat_Loader {
 
 	/**
-	 * @since    1.0.1
 	 * @access   protected
 	 * @var      array    $actions
 	 */
 	protected $actions;
 
 	/**
-	 * @since    1.0.1
 	 * @access   protected
 	 * @var      array    $filters
 	 */
@@ -35,7 +32,6 @@ class Cdesign_Base_Coat_Loader {
 	/**
 	 * Add a new action to be registered.
 	 *
-	 * @since    1.0.1
 	 * @param    string               $hook             
 	 * @param    object               $component        A reference to the instance of the object on which the action is defined.
 	 * @param    string               $callback         The name of the function definition on the $component.
@@ -49,7 +45,6 @@ class Cdesign_Base_Coat_Loader {
 	/**
 	 * Add a new filter to the collection to be registered.
 	 *
-	 * @since    1.0.1
 	 * @param    string               $hook             
 	 * @param    object               $component        A reference to the instance of the object on which the filter is defined.
 	 * @param    string               $callback         The name of the function definition on the $component.
@@ -63,7 +58,6 @@ class Cdesign_Base_Coat_Loader {
 	/**
 	 * A utility function that is used to register the actions and hooks into a single collection.
 	 *
-	 * @since    1.0.1
 	 * @access   private
 	 * @param    array                $hooks            The collection of hooks that is being registered (that is, actions or filters).
 	 * @param    string               $hook            
@@ -88,8 +82,7 @@ class Cdesign_Base_Coat_Loader {
 	}
 
 	/**
-	 * Register the filters and actions.
-	 * @since    1.0.1
+	 * Register the filters and actions
 	 */
 	public function run() {
 
